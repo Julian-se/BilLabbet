@@ -1,6 +1,6 @@
 # BilLabbet
 
-A small static site in Swedish. Three pages: start, about, and the first subject (engines). No backend, no database.
+A small static site in Swedish. Pages: Start (`index.html`), Om (`om.html`), Motor (`motor.html`), Service (`service.html`), and Sprängskiss (`sprangskiss.html`). No backend, no database.
 
 ## Preview locally
 
@@ -10,15 +10,13 @@ From this folder:
 python3 -m http.server 8080
 ```
 
-Open http://localhost:8080 and click through Start, Om, and Motor.
+Open http://localhost:8080 and click through Start, Om, Motor, Service, and Sprängskiss.
 
 ## What is live
 
 Production is hosted on Vercel: https://billabbet.vercel.app
 
 That address is already a production environment, with HTTPS. A custom domain, once DNS points at the same project, serves that same deployment.
-
-Right now a push does not update the live site, because this folder is not connected to a GitHub remote yet. Until that connection exists, an update is another production deploy from this folder. After GitHub is connected, a push to `master` is what replaces production.
 
 ## Update the live site
 
